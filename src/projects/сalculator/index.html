@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="check">
+    <header>Калькулятор</header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                     <div class="calc"> 
+                        <form action="GET">
+                            <!-- Эти INPUT нужны для: 1. Показывания цифр на которые нажали. 2. Результат того или иного вычисления -->
+                        <input id="numberArea" type="text" style="width: 100%;text-align: right;">
+                        <input id="result" type="text" style="width: 100%;text-align: right;">
+                        <!-- Этот класс отвечает за цифры-->
+                        <div class="numbers">
+                            <button type="button" onclick="check(this.id)" id="1">1</button>
+                            <button type="button" onclick="check(this.id)" id="2">2</button>
+                            <button type="button" onclick="check(this.id)" id="3">3</button>
+                            <button type="button" onclick="check(this.id)" id="4">4</button>
+                            <button type="button" onclick="check(this.id)" id="5">5</button>
+                            <button type="button" onclick="check(this.id)" id="6">6</button>
+                            <button type="button" onclick="check(this.id)" id="7">7</button>
+                            <button type="button" onclick="check(this.id)" id="8">8</button>
+                            <button type="button" onclick="check(this.id)" id="9">9</button>
+                            <button type="button" onclick="check(this.id)" id="0">0</button>
+                        </div><br>
+                        <!-- Этот класс отвечает за математические операции -->
+                        <div class="operation">
+                            <button type="button" onclick="check(this.id)" id="delete">Delete</button>
+                            <button type="button" onclick="check(this.id)" id="back">Back</button>
+                            <button type="button" onclick="check(this.id)" id="*">×</button>
+                            <button type="button" onclick="check(this.id)" id="/">/</button>
+                            <button type="button" onclick="check(this.id)" id="-">-</button>
+                            <button type="button" onclick="check(this.id)" id="+">+</button>
+                            <button type="button" onclick="check(this.id)" id="=">=</button>
+                            <button type="button" onclick="check(this.id)" id=".">.</button>
+                        </div>
+                        </form>
+                     </div>          
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </article>
+    <footer>Сделано Шакирзяновым Никитой в 2023 году</footer>
+
+
+
+    <script language="JavaScript" src="scrpt.js"></script>
+    <!-- Этот скрипт отвечает з атоЮ чтобы при загрузке страницы, она постепенно проявлялась -->
+    <script async language="JavaScript">
+        window.onload = function(){
+            window.setTimeout(function () {
+             document.body.classList.add('check-load');
+             document.body.classList.remove('check');
+             }, 500);
+        }
+    </script>
+</body>
+
+</html>

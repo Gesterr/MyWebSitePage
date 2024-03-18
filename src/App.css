@@ -1,0 +1,10 @@
+body{
+  background-image: url(./img/background.png);
+  background-repeat: repeat;
+  background-size: 50%;
+  
+}
+
+#root{
+  display: block;
+}

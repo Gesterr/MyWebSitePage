@@ -1,0 +1,180 @@
+/* Для тега Header */
+  .playCards{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid black;
+    padding: 2px;
+    border-bottom-left-radius: 10px;
+    right: 0;
+    background-color: #F9FAFA;
+    cursor: pointer;
+  }
+
+  .playCards img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .head{
+    width: auto;
+    height: auto;
+    text-align: center;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  /* Модификация  */
+  .head_mod{
+    border: 1px solid black;
+    background-color: #F9FAFA;
+    min-width: 375px;
+    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit,minmax(360px,420px));
+    border-bottom: 10px solid black;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  /* Блок под глобальное имя НИКИТА */
+  .head__name{
+    display: inline-flex;
+    padding-bottom: 10px;
+    padding-right: 4vw;
+    text-align: center;
+    width: 375px;
+  }
+  
+  .head__name h1{
+    margin: auto;
+    font-size: calc(1.375rem + 4vw);
+  }
+
+  .head__time{
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    font-size: calc(1.375rem + 0.2vw);
+  }
+
+  /* Общий блок под навигацию */
+  .head__block-nav{
+    height: 100%;
+    width: auto;
+  }
+  
+  /* Блок под разные вещи */
+  .head__nav{
+    background-color: white;
+    position: relative;
+    padding: 10px 0;
+    display: inline-flex;
+    border: 5px solid black;
+    border-radius: 5px;
+    height: 96.8px;
+    width: 375px;
+    font-size: calc(1.375rem + 5vw);
+  }
+  
+  /* Линии для разедления about/projects/contacts */
+  .head__line1{
+    position: absolute;
+    width: 204px;
+    height: 5px;
+    background-color: black;
+    rotate: 334deg;
+    top: 47%;
+    left: -12px; 
+  }
+  
+  .head__line2{
+    position: absolute;
+    width: 204px;
+    height: 5px;
+    background-color: black;
+    rotate: 206deg;
+    top: 47%;
+    left: 175px; 
+  }
+
+  .head__nav-name{
+    margin: 0;
+    font-size: calc(1.375rem + 0.1vw);
+    font-weight: 500;
+  }
+
+  /* Блок под About */
+  .head__nav-about{
+   width: 100px;
+  }
+  
+  .head__nav-about h3{
+    padding-top: 5px;
+    rotate: 339deg;
+    font-size: 1.5rem;
+  }
+  
+  /* Блок под Projects */
+  .head__nav-projects{
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 33px;
+  }
+  
+  .head__nav-projects h3{
+    font-size: 1.5rem;
+  }
+    /* Блок под Contacts  */
+  .head__nav-contacts{
+    width: 100px;
+    margin-left: 22px;
+  }
+  
+  .head__nav-contacts h3{
+    padding-top: 5px;
+    rotate: 23deg;
+    font-size: 1.5rem;
+  }
+  
+  .head_down-line{
+    background-color: black;
+    height: 5px;
+    width: 100%;
+  }
+  
+  .head__line-head-block{
+    padding: 0;
+    width: 100%;
+    min-width: 375px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 5px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 50px;
+  }
+  
+  .head__img{
+    display: inline-flex;
+    justify-items: center;
+    width: 1920px;
+    height: 50px;
+    border-radius: 5px;
+    
+  }
+  
+  .head__line-head{
+    height: 10px;
+    width: 2.5vw;
+    rotate:-45deg;
+    background-color: black;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }

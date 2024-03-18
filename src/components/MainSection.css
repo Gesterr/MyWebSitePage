@@ -1,0 +1,161 @@
+/* Информация обо мне */
+.main{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #F9FAFA;
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  .main__about-me{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,auto));
+    align-items: center;
+  }
+  
+  .main__about-me-text-block{
+    width: auto;
+  }
+  
+  .main__text-about-me{
+    font-size: 1.3rem;
+  }
+  
+  .main__img-me{
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  @media (max-width:991px) {
+    .main__img-me{
+        text-align: center;
+    }
+  }
+  
+  .main__img-me img{
+    width: calc(200px + 4vw);
+    height: calc(250px + 4vw);
+    border:5px solid black;
+    border-radius: 10px;
+  }
+  
+  
+  /*Контакты*/
+  
+  .main__text-contacts{
+    font-size: 20px;
+    font-weight: 450;
+  }
+  
+  .main__сontacts{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  /* Общая настройка для блока с картинками и текстом внутри */
+  .main__block-of-contacts{
+    position: relative;
+    border-radius: 10px;
+    margin: 20px 5px 20px 5px ;
+    height: auto;
+    width: 270px;
+  }
+  /* Настройка картинок с контактами */
+  .main__img{
+    transition: 0.6s;
+    border-radius: 10px;
+    width: 270px;
+    height: 151.88px;
+  }
+  
+  .main__projects{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .main__block-of-projects{
+    position: relative;
+    border-radius: 10px;
+    margin: 20px 5px 20px 5px ;
+    height: auto;
+    width: 270px;
+  }
+  
+  
+  
+  /* При наведении картинка мылиться и увеличивается */
+  .main__block-of-contacts:hover .main__img{
+    filter: blur(2px);
+    transition: 0.6s;
+    scale: 1.1;
+    opacity: 1;
+  }
+  
+  
+  .main__block-of-projects:hover .main__img{
+    filter: blur(2px);
+    transition: 0.6s;
+    scale: 1.1;
+    opacity: 1;
+  }
+  .main__text-area{
+    top: 0;
+    position: absolute;
+    display: grid;
+    width: 270px;
+    height: 151.88px;
+  }
+  
+  .main__block-of-projects p{
+    padding-top: 5px;
+    font-size: 17px;
+  }
+  
+  /* Настройки текста в картинке */
+  .main__text-in-img{
+    text-shadow: rgb(0, 0, 0) 0px 3px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0;
+    margin: 0;
+    transition: 0.6s;
+    position: absolute;
+    width: 270px;
+    top:67px;
+    left:0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    transform: none;
+  }
+  /* При наведении текст появляется внутри картинки */
+  .main__block-of-contacts:hover .main__text-in-img{
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+    scale: 1.1;
+    opacity: 1;
+  }
+  
+  
+  .main__block-of-projects:hover .main__text-in-img{
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+    scale: 1.1;
+    opacity: 1;
+  }
+  
+  .main_border{
+    border: 1px solid black;
+  }

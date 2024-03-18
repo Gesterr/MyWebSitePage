@@ -1,0 +1,112 @@
+header{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+footer{
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Отвечает за рамку калькулятора и заднююю сторону */
+.calc{
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Это отвечает за блок с цифрами */
+div.numbers{
+    
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 315px;
+    height: auto;
+}
+/* Это отвечает за кнопку от 1 до 9 */
+div.numbers button{
+    transition: 0.5s;
+    background-color: gray;
+    margin-top: 5px;
+    border-radius: 5px;
+    
+    color:black;
+    width: 100px;
+}
+/* Это отвечает за то, что при наведении изменяется цвет кнопки */
+div.numbers button:hover{
+    transition: 0.5s;
+    background-color: #045a57;
+}
+
+div.numbers button:active{
+    transition: 0.5s;
+    background-color: #1ADED7;
+}
+
+/* Тоже самое что и сверху, только для математических операций */
+div.operation{
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 315px;
+    height: auto;
+}
+
+div.operation button{
+    margin-top: 5px;
+    transition: 0.5s;
+    background-color: gray;
+    border-radius: 5px;
+    color:black;
+    width: 100px;
+}
+
+div.operation button:hover{
+    transition: 0.5s;
+    background-color: #045a57;
+}
+
+div.operation button:active{
+    transition: 0.5s;
+    background-color: #1ADED7;
+}
+
+
+
+
+#numberArea{
+    font-size: 20px;
+}
+
+#result{
+    font-size: 20px;
+}
+
+.check{
+    opacity: 0;
+}
+.check-load{
+    transition: 2s;
+    opacity: 1;
+}
+
+
+
+
