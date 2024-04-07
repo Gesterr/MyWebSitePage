@@ -77,9 +77,10 @@ button{
 }
 
 .playCards{
+    z-index: 999999;
     width: 50px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     border: 1px solid black;
     padding: 2px;
     border-bottom-left-radius: 10px;
@@ -124,7 +125,7 @@ button:active{
     background: #235731;
     border: 2px solid white;
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);

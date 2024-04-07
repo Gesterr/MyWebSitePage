@@ -154,7 +154,7 @@ function App1({onClick}) {
         <img src="../src/img/PlayCards.png" alt="" />
       </div>
      <div className={"container "  + classes.playerField}>
-      <div className={classes.popUp} style={{opacity: winLose ? 1 : 0, top: winLose ? '50%' : '0%'}} onClick={() => setWinLose(false)}>{winLose}</div>
+      <div className={classes.popUp} style={{display: winLose ? 'flex' : 'none'}} onClick={() => setWinLose(false)}>{winLose}</div>
       <Player tabel={tabel} />
 
       <label htmlFor=""> Счёт очков: {score}</label>

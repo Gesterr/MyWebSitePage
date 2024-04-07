@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Lilita+One&family=Oswald:wght@200..700&display=swap');
+
 body{
   background-image: url(./img/background.png);
   background-repeat: repeat;
@@ -7,4 +10,12 @@ body{
 
 #root{
   display: block;
+}
+
+span,p{
+  font-family: Comfortaa;
+}
+
+h2,h3,h4{
+  font-family: Oswald;
 }

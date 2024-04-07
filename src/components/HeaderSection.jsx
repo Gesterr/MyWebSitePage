@@ -16,7 +16,7 @@ export default function HeaderSection({onClick}){
       <header className="head">
         <section className="container head_mod">
           <div className="head__name">
-                  <h1>Nikita</h1>
+                  <h1>NIKITA</h1>
           </div>
           <span className='head__time'>Время на данный момент: {now.toLocaleTimeString()}</span>
           <nav className="head__block-nav">
